@@ -1,0 +1,115 @@
+:root {
+    --grey: rgb(33, 33, 33,.2);
+    --white: #ffffff;
+    --black: #000000;
+    --uutinen: #252525;
+  }
+
+  * {
+    color: var(--fontColor);
+  }
+
+body {
+    background-color: var(--bg);
+   margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+  .active {
+    background-color: #047baa;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+a {
+    color: black;
+}
+
+.uutinen:hover {
+    box-shadow: 0 0 11px rgb(33, 33, 33,.2);
+}
+
+.uutinen {
+    width: 95%;
+    padding: 5px;
+    background: var(--uutinenbg);
+    margin: 5px;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    background-color: #047baa; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+    border-radius: 4px;
+  }
+
+.light-theme {
+    --bg: var(--gray);
+    --fontColor: var(--black);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --uutinenbg: var(--uutinen);
+  }
+
+h2,p {
+    font-family: 'Merriweather', serif;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@media only screen and (min-width: 961px) {
+    .uutinen {
+        width: 40%;
+    }
+}
